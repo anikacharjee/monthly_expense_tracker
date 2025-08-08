@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Monthly Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Monthly Expense Tracker</h2>
+
+  <div class="entry-form">
+    <input type="date" id="date">
+    <input type="text" id="item" placeholder="Item">
+    <input type="number" id="amount" placeholder="Amount">
+    <button onclick="addExpense()">Add</button>
+  </div>
+
+  <div class="month-filter">
+    <label for="month">Select Month:</label>
+    <input type="month" id="month" onchange="showMonthlyExpenses()">
+  </div>
+
+  <h3>Expenses</h3>
+  <ul id="expense-list"></ul>
+
+  <h3>Total: ₹<span id="total">0</span></h3>
+
+  <script src="script.js"></script>
+</body>
+</html>
